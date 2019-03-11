@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        android:icon="@drawable/ic_location"
+        android:key="pref_key_localize"
+        android:layout="@layout/custom_preference"
+        android:title="Localization" />
+
+    <Preference
+        android:icon="@drawable/ic_notification"
+        android:key="pref_key_push"
+        android:layout="@layout/custom_preference"
+        android:title="Notifications" />
+
+    <PreferenceCategory
+        android:layout="@layout/custom_preference_category"
+        android:summary="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s."
+        android:title="Crash report">
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="pref_key_crashlytics"
+            android:layout="@layout/custom_switch_preference"
+            android:title="Sending usage data" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:layout="@layout/custom_preference_category"
+        android:summary="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s."
+        android:title="Analytics">
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="pref_key_analytics"
+            android:layout="@layout/custom_switch_preference"
+            android:title="Sending usage data" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:layout="@layout/custom_preference_category">
+
+        <Preference
+            android:icon="@drawable/ic_subtitles"
+            android:layout="@layout/custom_preference"
+            android:title="Some other setting" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
